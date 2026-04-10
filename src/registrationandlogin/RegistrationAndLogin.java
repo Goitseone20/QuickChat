@@ -48,6 +48,10 @@ class Login{
             return false;
         }
     }
+    static void registration(){
+        Scanner input= new Scanner(System.in);
+        
+    }
      
         
     }
@@ -63,12 +67,7 @@ public class RegistrationAndLogin {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner input= new Scanner(System.in);
-        
-        
-       System.out.println("Create a UserName");
-       
-        
+      
       
     
 }
