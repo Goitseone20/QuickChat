@@ -26,8 +26,9 @@ class Login{
             return false;
             
         }
-    boolean checkPassword(String Password){
-        if (Password.length()==8 && Password.contains(".*[A-Z].") && Password.contains("\\d") && Password.contains(".[!@#$%^&*].")){
+    }
+    boolean checkPassword(){
+      if (Password.length()==8 && Password.contains(".*[A-Z].") && Password.contains("\\d") && Password.contains(".[!@#$%^&*].")){
             System.out.println("Password successfully captured ");
            return true; 
         }
@@ -37,11 +38,22 @@ class Login{
         }
         
     }
-    boolean checkCellphone
+    boolean checkCellphone(String Cellphone){
+        if(Cellphone.length()==10 && Cellphone.contains(".[*//(+27\\d(9)")){
+          System.out.println("Cellphone number successfully added");
+          return true;
+        }
+        else{
+            System.out.println("Cellphone number incorrectly formatted or does not contain intenational code");
+            return false;
+        }
+    }
      
         
     }
-}
+
+
+
        
     
 public class RegistrationAndLogin {
@@ -51,6 +63,10 @@ public class RegistrationAndLogin {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner input= new Scanner(System.in);
+        
+        
+       System.out.println("Create a UserName");
        
         
       
