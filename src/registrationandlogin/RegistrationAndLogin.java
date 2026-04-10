@@ -8,6 +8,20 @@ import java.util.Scanner;
  *
  * @author Student
  */
+class Login{
+    String UserName;
+    String password;
+    String cellphone;
+     
+    boolean checkUserName(String UserName){
+        if (UserName.contains() && UserName.length()== 5{
+            return true;
+        }
+   
+    
+    
+    }
+}
 public class RegistrationAndLogin {
 
     /**
@@ -15,16 +29,9 @@ public class RegistrationAndLogin {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       Scanner input = new Scanner (System.in);
+       
         
-       System.out.print("Create a username");
-       String username = input.nextLine();
-       
-       System.out.println("Create a password");
-       String password = input.next();
-       
-       System.out.println("Enter a South African cellphone number");
-       int cellphonenumber = input.nextInt();
-    }
+      
     
+}
 }
